@@ -9,10 +9,15 @@ Asymmetric Encryption (also called public key cryptography) is a method of encry
 
   ## Starting by creating a file, creating a text file that would serve as the message to protect
   <img width="383" height="25" alt="image" src="https://github.com/user-attachments/assets/90568aa4-922a-4c2e-91d3-be1ba63fd3c2" />
+  
   quick explanation of the code:
+  
   *The echo command prints text to the standard output(usually the terminal)
+  
   *"This is a secret message" is the text that will be printed.
+  
   * > This is the output redirection operator
+    
      it takes the ouput of the command on the left (echo) and writes it to the file on the right (secret.txt)
      if the file secret.txt does not exist, it will be created
      if the file already exists, it content will be overwritten
