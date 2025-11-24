@@ -12,9 +12,9 @@ Asymmetric Encryption (also called public key cryptography) is a method of encry
   
   quick explanation of the code:
   
-  *The echo command prints text to the standard output(usually the terminal)
+  * The echo command prints text to the standard output(usually the terminal)
   
-  *"This is a secret message" is the text that will be printed.
+  * "This is a secret message" is the text that will be printed.
   
   * ">" This is the output redirection operator
     
@@ -53,9 +53,9 @@ Asymmetric Encryption (also called public key cryptography) is a method of encry
     
   * -in private_key.pem → Reads the existing private key file
     
-  *-pubout → Extracts the corresponding public key
+  * -pubout → Extracts the corresponding public key
   
-  *-out public_key.pem → Saves the public key to a file named public_key.pem.
+  * -out public_key.pem → Saves the public key to a file named public_key.pem.
     
     Now the two keys is in hand , *private_key.pem; used to decrypt *public_key.pem; used to encrypt data , this clearly shows the idea of (asymmetric) one key locks, the other unlocks.
 
@@ -69,13 +69,13 @@ Asymmetric Encryption (also called public key cryptography) is a method of encry
      
    * -encrypt → Encrypts the input data
      
-  *-pubin → Specifies that the input key is a public key
+  * -pubin → Specifies that the input key is a public key
   
-  *-inkey public_key.pem → Uses public_key.pem to encrypt
+  * -inkey public_key.pem → Uses public_key.pem to encrypt
   
-  *-in secret.txt → The file containing the message to encrypt
+  * -in secret.txt → The file containing the message to encrypt
   
-  *-out secret.enc → Saves the encrypted output to secret.enc.
+ * -out secret.enc → Saves the encrypted output to secret.enc.
 
 after ruuning it, secret.txt transformed into a new file called secret.enc, openining it , it was just a bunch of random symbols, completely unreachable 
 
@@ -87,11 +87,11 @@ after ruuning it, secret.txt transformed into a new file called secret.enc, open
  
 * -decrypt → Decrypts the data
   
-*-inkey private_key.pem → Uses the private key to decrypt
+* -inkey private_key.pem → Uses the private key to decrypt
 
-*-in secret.enc → The encrypted file
+* -in secret.enc → The encrypted file
 
-*-out decrypt.txt → Saves the decrypted message.
+* -out decrypt.txt → Saves the decrypted message.
   
  Opening decrypt.txt revealed the original text "This is a secret message"
 
@@ -100,9 +100,9 @@ after ruuning it, secret.txt transformed into a new file called secret.enc, open
  
  quick explanation : 
  
- *chmod 600 → Sets file permissions so only the owner can read and write.
+ * chmod 600 → Sets file permissions so only the owner can read and write.
  
- *private_key.pem → The file being protected.
+ * private_key.pem → The file being protected.
 
 Doing this restricts access so that only the authorised access can read nor write the file. it is simple but crucial step in maintaining key security. 
 
