@@ -16,7 +16,7 @@ Asymmetric Encryption (also called public key cryptography) is a method of encry
   
   *"This is a secret message" is the text that will be printed.
   
-  * > This is the output redirection operator
+  * ">" This is the output redirection operator
     
      it takes the ouput of the command on the left (echo) and writes it to the file on the right (secret.txt)
     
