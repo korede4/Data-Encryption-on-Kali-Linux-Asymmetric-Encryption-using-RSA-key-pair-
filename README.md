@@ -1,10 +1,10 @@
 # Data-Encryption-on-Kali-Linux-Asymmetric-Encryption-using-RSA-key-pair
 ## Hands on Encryption and Decryption on Kali Linux using open SSL to explore data confidentiality and cryptography 
 
-Lets make a proper defination and comprehension on Asymmetric Encryption.
+Lets make a proper definition and comprehension on Asymmetric Encryption.
 Asymmetric Encryption (also called public key cryptography) is a method of encryption that uses two seperate keys:
 * Public key-used to encrypt data, it can be shared freely with anyone
-* Private key-used to decrypt data it must be kept secret
+* Private key-used to decrypt data, it must be kept secret
     The key principle is that anything encrypted with the public key can only be decrypted with the corresponding private key and vice versa
 
   ## Starting by creating a file, creating a text file that would serve as the message to protect
@@ -106,7 +106,7 @@ after ruuning it, secret.txt transformed into a new file called secret.enc, open
 
 Doing this restricts access so that only the authorised access can read nor write the file. it is simple but crucial step in maintaining key security. 
 
-## Reflection this helped me to understand how RSA encryption works, the concept of having two keys one to lock and another to unlock, it is fascinating to think that the same process forms the backbone of secure system we use everyday, like HTTPS, SSH and DIGITAL CERTIFICATES.
+## Reflection; this helped me to understand how RSA encryption works, the concept of having two keys one to lock and another to unlock, it is fascinating to think that the same process forms the backbone of secure system we use everyday, like HTTPS, SSH and DIGITAL CERTIFICATES.
  
 
 
