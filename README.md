@@ -10,7 +10,7 @@ Asymmetric Encryption (also called public key cryptography) is a method of encry
   ## Starting by creating a file, creating a text file that would serve as the message to protect
   <img width="383" height="25" alt="image" src="https://github.com/user-attachments/assets/90568aa4-922a-4c2e-91d3-be1ba63fd3c2" />
   
-  quick explanation of the code:
+  quick explanation of the command:
   
   * The echo command prints text to the standard output(usually the terminal)
   
@@ -32,7 +32,7 @@ Asymmetric Encryption (also called public key cryptography) is a method of encry
   ## Generating RSA key pair Next, generate a 2048-bit RSA private key. This key would later help to decrypt the data
   <img width="1334" height="151" alt="image" src="https://github.com/user-attachments/assets/a0233a50-ac0c-4033-8a73-b077c5b00a31" />
   
-  quick explanation of the code:
+  quick explanation of the command:
   
   * Openssl genpkey- Genetrates a new private key
     
@@ -42,12 +42,12 @@ Asymmetric Encryption (also called public key cryptography) is a method of encry
    
   * -aes256 - Encrypts the private key with AES-256 using a passphrase for extra security.
     
-  after running this code, openSSL asked to set a passphrase for extra security.This is to realize how important it is to keep the private key safe.
+  after running the command, openSSL asked to set a passphrase for extra security.This is to realize how important it is to keep the private key safe.
 
    ## Extracting the public key with the private key created, the public is needed to encrypt the files
   <img width="530" height="51" alt="image" src="https://github.com/user-attachments/assets/38e39872-cc0a-4866-9812-cc2138eab61d" />
   
-  quick explanation of the code:
+  quick explanation of the command:
   
   * openssl rsa → Manages RSA keys
     
@@ -63,7 +63,7 @@ Asymmetric Encryption (also called public key cryptography) is a method of encry
     <img width="796" height="36" alt="image" src="https://github.com/user-attachments/assets/7a0ce315-ff67-4861-a7d8-414615985154" />
     <img width="1332" height="87" alt="image" src="https://github.com/user-attachments/assets/3bc7591d-5c93-4d28-94a0-4bfe10fd0d3b" />
     
-  quick explanation of the code:
+  quick explanation of the command:
   
    * openssl pkeyutl → Utility for public/private key operations.
      
@@ -83,7 +83,7 @@ after ruuning it, secret.txt transformed into a new file called secret.enc, open
 <img width="689" height="33" alt="image" src="https://github.com/user-attachments/assets/78bc7b28-027a-4d37-9859-5066e445da2a" />
 <img width="246" height="39" alt="image" src="https://github.com/user-attachments/assets/77e31685-196d-452f-b2df-23ac36f0a13d" />
 
- quick explanation of the code:
+ quick explanation of the command:
  
 * -decrypt → Decrypts the data
   
